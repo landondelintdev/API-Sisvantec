@@ -1,0 +1,45 @@
+{
+  "name": "api-sisvantec",
+  "version": "1.0.0",
+  "types": "module",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs",
+    "test": "tests"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon --watch src --exec \"node -r dotenv/config src/index.js\"",
+    "lint": "eslint . --ext .js",
+    "test": "jest --runInBand",
+    "prepare": "husky install"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "compression": "^1.8.1",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.2.3",
+    "eslint": "^9.38.0",
+    "eslint-plugin-import": "^2.32.0",
+    "express": "^5.1.0",
+    "express-validator": "^7.3.0",
+    "firebase-admin": "^13.5.0",
+    "helmet": "^8.1.0",
+    "husky": "^9.1.7",
+    "jest": "^30.2.0",
+    "lint-staged": "^16.2.6",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10",
+    "prettier": "^3.6.2",
+    "supertest": "^7.1.4",
+    "uuid": "^13.0.0",
+    "winston": "^3.18.3"
+  }
+}
